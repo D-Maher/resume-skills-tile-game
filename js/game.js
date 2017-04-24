@@ -6,7 +6,6 @@ function Game() {
   this.prettyBoard = this.prettify(this.board);
 }
 
-
 Game.prototype.prettify = function(board) {
   var prettyBoard = ""
 
@@ -23,4 +22,12 @@ Game.prototype.prettify = function(board) {
   }
 
   return prettyBoard;
+}
+
+function isValidMove(currentValue, destValue) {
+  if (destValue === 0 || currentValue === destValue) {
+    return true;
+  } else {
+    return false;
+  }
 }
