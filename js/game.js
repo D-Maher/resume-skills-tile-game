@@ -3,10 +3,9 @@ function Game() {
                 [0, 0, 0, 0],
                 [0, 0, 2, 0],
                 [0, 4, 0, 0]];
-  this.prettyBoard = this.prettify(this.board);
 }
 
-Game.prototype.prettify = function(board) {
+function prettify(board) {
   var prettyBoard = ""
 
   for (var i = 0; i < board.length; i++) {
@@ -22,6 +21,10 @@ Game.prototype.prettify = function(board) {
   }
 
   return prettyBoard;
+}
+
+Game.prototype.printBoard = function() {
+  console.log(prettify(this.board));
 }
 
 function isValidMove(currentValue, destinationValue) {

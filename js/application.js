@@ -1,10 +1,11 @@
 $(document).ready(function() {
   
-  game = new Game();
+  game = new Game;
 
-  console.log(game.prettyBoard);
+  game.printBoard();
 
-
-
-
+  Mousetrap.bind("left", function() {
+    game.moveLeft();
+    game.printBoard();
+  })
 });
