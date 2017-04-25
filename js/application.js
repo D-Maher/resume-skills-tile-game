@@ -8,4 +8,11 @@ $(document).ready(function() {
     game.moveLeft();
     game.printBoard();
   })
+
+  Mousetrap.bind("right", function() {
+    game.moveRight();
+    game.printBoard();
+  })
+
+
 });
