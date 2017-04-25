@@ -1,10 +1,12 @@
 function Game() {
-  this.board = [[0, 2, 0, 0],
+  this.board = [[0, 0, 0, 0],
                 [0, 0, 0, 0],
-                [0, 2, 0, 0],
-                [0, 0, 4, 0]];
+                [0, 0, 0, 0],
+                [0, 0, 0, 0]];
 };
 
+
+// Game display in console
 function prettify(board) {
   var prettyBoard = "";
 
@@ -26,6 +28,31 @@ Game.prototype.printBoard = function() {
   console.log(prettify(this.board));
 };
 
+
+// Game progression
+Game.prototype.spawnTile = function() {
+  var board = this.board;
+  var zeroCoords = [];
+
+  for (var row = 0; row <= 3; row++) {
+    for (var column = 0; column <= 3; column++) {
+      if (board[row][column] === 0) {
+        zeroCoords.push([row, column])
+      }
+    }
+  }
+
+  spawnCoords = zeroCoords[Math.floor(Math.random() * zeroCoords.length)]
+
+  possibleTiles = [2, 2, 2, 2, 2, 2, 2, 2, 2, 4]
+
+  tileToSpawn = possibleTiles[Math.floor(Math.random() * possibleTiles.length)]
+
+  board[spawnCoords[0]][spawnCoords[1]] = tileToSpawn;
+};
+
+
+// Game movement
 function isValidMove(currentValue, destinationValue) {
   if (destinationValue === 0 || currentValue === destinationValue) {
     return true;
