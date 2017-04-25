@@ -44,9 +44,7 @@ Game.prototype.spawnTile = function() {
 
   spawnCoords = zeroCoords[Math.floor(Math.random() * zeroCoords.length)]
 
-  possibleTiles = [2, 2, 2, 2, 2, 2, 2, 2, 2, 4]
-
-  tileToSpawn = possibleTiles[Math.floor(Math.random() * possibleTiles.length)]
+  tileToSpawn = Math.random() <= 0.9 ? 2 : 4
 
   board[spawnCoords[0]][spawnCoords[1]] = tileToSpawn;
 };
