@@ -11,10 +11,10 @@ function prettify(board) {
   var prettyBoard = "";
 
   for (var i = 0; i < board.length; i++) {
-    var rowString = "|";
+    var rowString = "";
 
     for (var j = 0; j < board.length; j++) {
-      rowString += board[i][j].toString() + "|";
+      rowString += board[i][j].toString() + " ";
     }
 
     rowString += "\n"
