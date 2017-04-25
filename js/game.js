@@ -95,8 +95,6 @@ function findDestination(currentCoords, direction, limit) {
 Game.prototype.moveLeft = function() {
   var board = this.board;
 
-  console.log("LEFT")
-
   for (var row = 0; row <= 3; row++) {
     var limitColumn = 0;
 
@@ -126,8 +124,6 @@ Game.prototype.moveLeft = function() {
 Game.prototype.moveRight = function() {
   var board = this.board;
 
-  console.log("RIGHT")
-
   for (var row = 0; row <= 3; row++) {
     var limitColumn = 3;
 
@@ -156,8 +152,6 @@ Game.prototype.moveRight = function() {
 Game.prototype.moveUp = function() {
   var board = this.board;
 
-  console.log("UP");
-
   for (var column = 0; column <= 3; column++) {
     var limitRow = 0;
 
@@ -185,8 +179,6 @@ Game.prototype.moveUp = function() {
 
 Game.prototype.moveDown = function() {
   var board = this.board;
-
-  console.log("DOWN");
 
   for (var column = 0; column <= 3; column++) {
     var limitRow = 3;
