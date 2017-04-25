@@ -39,12 +39,12 @@ function findDestination(currentCoords, direction) {
 
   var currentRow = currentCoords[0];
   var currentColumn = currentCoords[1];
+  var currentValue = board[currentRow][currentColumn]
 
   switch(direction) {
     case "left":
 
       for (var lastCheckedColumn = currentColumn - 1; lastCheckedColumn >= 0; lastCheckedColumn--) {
-        var currentValue = board[currentRow][currentColumn];  // DRY this up!!!
         var destinationValue = board[currentRow][lastCheckedColumn]
 
         if (isValidMove(currentValue, destinationValue) === false) {
@@ -54,18 +54,17 @@ function findDestination(currentCoords, direction) {
 
       return [currentRow, 0]
 
-      case "right":
+    case "right":
 
-        for (var lastCheckedColumn = currentColumn + 1; lastCheckedColumn <= 3; lastCheckedColumn++) {
-          var currentValue = board[currentRow][currentColumn];
-          var destinationValue = board[currentRow][lastCheckedColumn]
+      for (var lastCheckedColumn = currentColumn + 1; lastCheckedColumn <= 3; lastCheckedColumn++) {
+        var destinationValue = board[currentRow][lastCheckedColumn]
 
-          if (isValidMove(currentValue, destinationValue) === false) {
-            return [currentRow, lastCheckedColumn - 1];
-          }
+        if (isValidMove(currentValue, destinationValue) === false) {
+          return [currentRow, lastCheckedColumn - 1];
         }
+      }
 
-        return [currentRow, 3]
+      return [currentRow, 3]
   }
 }
 
