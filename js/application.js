@@ -14,5 +14,10 @@ $(document).ready(function() {
     game.printBoard();
   })
 
+  Mousetrap.bind("up", function() {
+    game.moveUp();
+    game.printBoard();
+  })
+
 
 });
