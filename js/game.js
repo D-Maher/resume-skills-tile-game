@@ -1,8 +1,8 @@
 function Game() {
-  this.board = [[0, 0, 2, 0],
-                [0, 0, 0, 0],
-                [0, 0, 2, 0],
-                [0, 4, 0, 0]];
+  this.board = [[0, 0, 0, 0],
+                [4, 0, 0, 0],
+                [0, 2, 0, 2],
+                [0, 0, 0, 0]];
 }
 
 function prettify(board) {
@@ -72,11 +72,23 @@ function findDestination(currentCoords, direction) {
         var destinationValue = board[lastCheckedRow][currentColumn];
 
         if (isValidMove(currentValue, destinationValue) === false) {
-          return [lastCheckedRow + 1][currentColumn];
+          return [lastCheckedRow + 1,currentColumn];
         }
       }
 
-      return [0, currentColumn]
+      return [0, currentColumn];
+
+    case "down":
+
+      for (var lastCheckedRow = currentRow + 1; lastCheckedRow <= 3; lastCheckedRow++) {
+        var destinationValue = board[lastCheckedRow][currentColumn];
+
+        if (isValidMove(currentValue, destinationValue) === false) {
+          return [lastCheckedRow - 1,currentColumn];
+        }
+      }
+
+      return [3, currentColumn];
   }
 }
 
@@ -145,6 +157,33 @@ Game.prototype.moveUp = function() {
 
       if (currentValue !== 0) {
         var destination = findDestination([row, column], "up");
+        var destinationRow = destination[0];
+        var destinationColumn = destination[1];
+        var destinationValue = board[destinationRow][destinationColumn];
+
+        if (destinationValue === currentValue) {
+          board[destinationRow][destinationColumn] = currentValue + destinationValue
+          board[row][column] = 0
+        } else {
+          board[destinationRow][destinationColumn] = currentValue
+          board[row][column] = 0
+        }
+      }
+    }
+  }
+};
+
+Game.prototype.moveDown = function() {
+  var board = this.board;
+
+  console.log("DOWN");
+
+  for (var column = 0; column <= 3; column++) {
+    for (var row = 2; row >= 0; row--) {
+      var currentValue = board[row][column];
+
+      if (currentValue !== 0) {
+        var destination = findDestination([row, column], "down");
         var destinationRow = destination[0];
         var destinationColumn = destination[1];
         var destinationValue = board[destinationRow][destinationColumn];

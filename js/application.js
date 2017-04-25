@@ -19,5 +19,8 @@ $(document).ready(function() {
     game.printBoard();
   })
 
-
+  Mousetrap.bind("down", function() {
+    game.moveDown();
+    game.printBoard();
+  })
 });
