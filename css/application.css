@@ -23,3 +23,60 @@
         text-align: center;
         font-size: 4em;
       }
+
+
+/* tile colors */
+.two {
+  color: white;
+  background-color: #277B40;
+}
+
+.four {
+  color: white;
+  background-color: #1500CB;
+}
+
+.eight {
+  color: black;
+  background-color: #FFFF00;
+}
+
+.sixteen {
+  color: white;
+  background-color: #E3007A;
+}
+
+.thirty-two {
+  color: white;
+  background-color: #9F00FF;
+}
+
+.sixty-four {
+  color: white;
+  background-color: #FF6501;
+}
+
+.one-twenty-eight {
+  color: white;
+  background-color: #C50B12;
+}
+
+.two-fifty-six {
+  color: black;
+  background-color: #76FFD3;
+}
+
+.five-twelve {
+  color: black;
+  background-color: #55DE05;
+}
+
+.ten-twenty-four {
+  color: white;
+  background-color: #E0B0FF;
+}
+
+.twenty-forty-eight {
+  color: white;
+  background-color: #3C4758;
+}
