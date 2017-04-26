@@ -1,0 +1,25 @@
+#game-container {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+  #game-grid {
+    position: absolute;
+    border-collapse: collapse;
+    height: 99%;
+    width: 100%;
+    z-index: 0;
+  }
+
+    td {
+        background-color: #B5D9FE;
+        border: 10px solid #72B7E1;
+        border-radius: 5px;
+        height: 25%;
+        width: 25%;
+        text-align: center;
+        font-size: 4em;
+      }
