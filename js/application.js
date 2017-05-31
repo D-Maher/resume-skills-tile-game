@@ -77,11 +77,12 @@ function updateBoard() {
     }
   }
 
-  for (var k = 0; k < $('td').length; k++) {
-    var $tile = $('td').eq(k);
+  for (var k = 0; k < $('.tile').length; k++) {
+    var $tile = $('.tile').eq(k);
 
     $tile.html(flattenedBoard[k])
     $tile.removeClass()
+    $tile.addClass('tile')
     $tile.addClass(applyCSS(flattenedBoard[k]))
 
     if ($tile.html() === "0") {

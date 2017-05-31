@@ -1,29 +1,50 @@
-#game-container {
-  position: relative;
-  height: 550px;
-  width: 550px;
-  margin: 0 auto;
-  margin-top: 15%;
+.container {
+  margin-top: 5%;
 }
 
   #game-grid {
-    position: absolute;
-    border-collapse: collapse;
-    height: 99%;
+    position: relative;
     width: 100%;
-    z-index: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0.75%;
+    padding-bottom: 100%;
+    background-color: #72B7E1;
   }
 
-    td {
-        background-color: #B5D9FE;
-        border: 10px solid #72B7E1;
-        border-radius: 5px;
-        height: 25%;
-        width: 25%;
-        text-align: center;
-        font-size: 4em;
-      }
+    .tile {
+      float: left;
+      position: relative;
+      background-color: #B5D9FE;
+      border-radius: 5px;
+      margin: 1%;
+      height: 5vw;
+      width: 23%;
+      padding-bottom: 23%;
+      text-align: center;
+      font-size: 4em;
+    }
 
+    #legend-title {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    #tile-legend {
+      border: 2px solid black;
+      height: 100%;
+      width: 33%;
+      margin: 0 auto;
+    }
+
+      .legend-logo {
+        height: 50px;
+        width: 50px;
+        margin: 5% auto;
+        text-align: center;
+        font-size: 3em;
+      }
 
 /* tile colors */
 .two {
