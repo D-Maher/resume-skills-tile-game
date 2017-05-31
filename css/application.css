@@ -1,0 +1,126 @@
+#game-container {
+  position: relative;
+  height: 550px;
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+  #game-grid {
+    position: absolute;
+    border-collapse: collapse;
+    height: 99%;
+    width: 100%;
+    z-index: 0;
+  }
+
+    td {
+        background-color: #B5D9FE;
+        border: 10px solid #72B7E1;
+        border-radius: 5px;
+        height: 25%;
+        width: 25%;
+        text-align: center;
+        font-size: 4em;
+      }
+
+
+/* tile colors */
+.two {
+  background-color: white;
+  background-image: url("../logos/css3_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.four {
+  background-color: white;
+  background-image: url("../logos/html5_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.eight {
+  background-color: white;
+  background-image: url("../logos/javascript_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.sixteen {
+  background-color: white;
+  background-image: url("../logos/jquery_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.thirty-two {
+  background-color: white;
+  background-image: url("../logos/ruby_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.sixty-four {
+  background-color: white;
+  background-image: url("../logos/rails_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.one-twenty-eight {
+  background-color: white;
+  background-image: url("../logos/git_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.two-fifty-six {
+  background-color: white;
+  background-image: url("../logos/postgresql_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.five-twelve {
+  background-color: white;
+  background-image: url("../logos/agile_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.ten-twenty-four {
+  background-color: white;
+  background-image: url("../logos/heroku_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.twenty-forty-eight {
+  background-color: white;
+  background-image: url("../logos/google_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
