@@ -27,56 +27,100 @@
 
 /* tile colors */
 .two {
-  color: white;
-  background-color: #277B40;
+  background-color: white;
+  background-image: url("../logos/css3_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .four {
-  color: white;
-  background-color: #1500CB;
+  background-color: white;
+  background-image: url("../logos/html5_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .eight {
-  color: black;
-  background-color: #FFFF00;
+  background-color: white;
+  background-image: url("../logos/javascript_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .sixteen {
-  color: white;
-  background-color: #E3007A;
+  background-color: white;
+  background-image: url("../logos/jquery_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .thirty-two {
-  color: white;
-  background-color: #9F00FF;
+  background-color: white;
+  background-image: url("../logos/ruby_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .sixty-four {
-  color: white;
-  background-color: #FF6501;
+  background-color: white;
+  background-image: url("../logos/rails_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .one-twenty-eight {
-  color: white;
-  background-color: #C50B12;
+  background-color: white;
+  background-image: url("../logos/git_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .two-fifty-six {
-  color: black;
-  background-color: #76FFD3;
+  background-color: white;
+  background-image: url("../logos/postgresql_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .five-twelve {
-  color: black;
-  background-color: #55DE05;
+  background-color: white;
+  background-image: url("../logos/agile_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .ten-twenty-four {
-  color: white;
-  background-color: #E0B0FF;
+  background-color: white;
+  background-image: url("../logos/heroku_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 .twenty-forty-eight {
-  color: white;
-  background-color: #3C4758;
+  background-color: white;
+  background-image: url("../logos/google_logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
 }
